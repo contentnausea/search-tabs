@@ -134,6 +134,7 @@
   }
 }
 
+/* May need to adjust to keep search-btn and search-box equal height depending on page and viewport dimensions */
 @media all and (max-width: 449px) {
   .search-btn {
     margin-top: 10px;
