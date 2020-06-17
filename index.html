@@ -2,6 +2,8 @@
 
 <html lang="en">
 <head>
+
+<!-- Load this script in the <head> of pages containing search box -->
 <link rel="stylesheet" type="text/css" href="tabs.css">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<script>function searchPrimo() {
@@ -27,6 +29,8 @@ function setPreviousSearchTerm() {
 </head>
 
 <body>
+
+<!-- Start HTML for search tabs. Adapt and paste into html page -->
 <div id="search-tabs">
 <div class="tabs">
   <input type="radio" name="tabs" id="tabone" checked="checked">
@@ -34,7 +38,7 @@ function setPreviousSearchTerm() {
   <div class="tab">
     <div>
 <h3>Search the Library Catalog</h3>
-<!-- Replace Primo URL below -->
+<!-- Start Primo search form. Replace Primo URL below -->
 <form class="search-form" id="simple" name="searchForm" method="get" target="_self" action="https://mines.primo.exlibrisgroup.com/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
  <!-- Customizable Parameters -->
  <!-- Replace 01COLSCHL_INST with your insitution code-->
@@ -57,31 +61,40 @@ function setPreviousSearchTerm() {
 <input id="go" class="search-btn" title="Search" onclick="searchPrimo()" type="submit" value="Search" alt="Search">
 </form>
 </form>
+<!-- End Primo search form -->
 
 <!-- Search Links at the bottom of the search box -->
-<!-- Replace advanced search link below -->
+<!-- Replace search links below -->
 <div class="search-links"><p><i class="fa fa-search-plus"></i>
  <a href="https://mines.primo.exlibrisgroup.com/discovery/search?vid=01COLSCHL_INST:MINES&mode=advanced&tab=Everything&lang=en&sortby=rank">
 Advanced Search</a> | <a href="https://library.mines.edu/ill">Can't Find It?</a></p></div>
-<!-- End div -->
 </div>
   </div>
 
   <input type="radio" name="tabs" id="tabtwo">
   <label for="tabtwo">Tab Two</label>
   <div class="tab">
-    <h1>Tab Two Content</h1>
+    <h3>Tab Two Content</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 
   <input type="radio" name="tabs" id="tabthree">
   <label for="tabthree">Tab Three</label>
   <div class="tab">
-    <h1>Tab Three Content</h1>
+    <h3>Tab Three Content</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   </div>
+
+  <input type="radio" name="tabs" id="tabfour">
+  <label for="tabfour">Tab Four</label>
+  <div class="tab">
+    <h3>Tab Four Content</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+
 </div>
 </div>
+<!-- End search tabs HTML-->
 </body>
 
 </html>

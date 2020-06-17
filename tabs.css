@@ -112,7 +112,7 @@
   color: #000000;
 }
 
-/* Media queries for search forms */
+/* Media queries for search forms - may need adjusting depending on page and viewport dimensions */
 @media all and (max-width: 577px) {
   .select-box {
     flex: 1 0 200px;
