@@ -3,27 +3,31 @@
  */
 .tabs {
   display: flex;
-  flex-wrap: wrap; // make sure it wraps
+  /* make sure it wraps */
+  flex-wrap: wrap;
 }
 
 .tabs label {
-  order: 1; // Put the labels first
+  /* Put the labels first */
+  order: 1;
   display: block;
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #90CAF9;
+  background: #BFC0BF;
+  color: #21314d;
   font-weight: bold;
   transition: background ease 0.2s;
 }
 
 .tabs .tab {
-  order: 99; // Put the tabs last
+  /* Put the tabs last */
+  order: 99;
   flex-grow: 1;
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #fff;
+  background: #e6e6e6;
 }
 
 .tabs input[type="radio"] {
@@ -31,7 +35,8 @@
 }
 
 .tabs input[type="radio"]:checked+label {
-  background: #fff;
+  background: #21314d;
+  color: #ffffff;
 }
 
 .tabs input[type="radio"]:checked+label+.tab {
@@ -52,23 +57,11 @@
   }
 }
 
-/**
- * Generic Styling
-*/
-body {
-  background: #e6e6e6;
-  min-height: 100vh;
-  box-sizing: border-box;
-  padding-top: 10vh;
+/* Search boxes - flexbox */
+#search-tabs {
   font-family: sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-  max-width: 60rem;
-  margin: 0 auto;
-  font-size: 112%;
 }
 
-/* Search boxes - flexbox */
 .search-form {
   display: flex;
   flex-wrap: wrap;
