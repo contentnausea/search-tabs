@@ -17,7 +17,15 @@
   background: #BFC0BF;
   color: #21314d;
   font-weight: bold;
+  text-align: center;
   transition: background ease 0.2s;
+}
+
+/* Equal tab widths*/
+@media all and (min-width: 720px) {
+  .tabs label {
+    flex: 1;
+  }
 }
 
 .tabs .tab {
