@@ -55,8 +55,8 @@
 /**
  * Generic Styling
 */
-#search-tabs {
-  border: 1px solid #000000;
+body {
+  background: #e6e6e6;
   min-height: 100vh;
   box-sizing: border-box;
   padding-top: 10vh;
